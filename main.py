@@ -41,8 +41,8 @@ form = """
 """
 @app.route("/")
 def index():
-    encrypted_string = ""
-    return form.format(encrypted_string)
+    encr_string = ""
+    return form.format(encr_string)
 
 @app.route("/",methods=["post"])
 def encrypt():
